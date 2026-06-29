@@ -134,9 +134,6 @@ test('Playwright Built-in Locators and Functions Demo', async ({ page }) => {
 
   await typescriptTodo.waitFor();
 
-  // =====================================================
-  // 15. Screenshot
-  // =====================================================
 
   await page.screenshot({
     path: 'playwright-demo.png',
@@ -145,9 +142,7 @@ test('Playwright Built-in Locators and Functions Demo', async ({ page }) => {
 
   console.log('Screenshot captured');
 
-  // =====================================================
-  // 16. Evaluate JavaScript in browser
-  // =====================================================
+ 
 
   const pageTitle = await page.evaluate(() => document.title);
 
@@ -166,9 +161,6 @@ test('Playwright Built-in Locators and Functions Demo', async ({ page }) => {
 
   console.log('Locator chaining successful');
 
-  // =====================================================
-  // 18. Soft Assertions
-  // =====================================================
 
   await expect.soft(todoItems).toHaveCount(2);
 
