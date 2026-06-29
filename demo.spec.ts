@@ -174,9 +174,6 @@ test('Playwright Built-in Locators and Functions Demo', async ({ page }) => {
 
   console.log('Soft assertion executed');
 
-  // =====================================================
-  // 19. Close page
-  // =====================================================
 
   await page.close();
 
